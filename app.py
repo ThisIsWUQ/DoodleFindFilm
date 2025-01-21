@@ -72,6 +72,20 @@ canvas_result = st_canvas(
     point_display_radius=point_display_radius if drawing_mode == 'point' else 0,
     key="canvas",
 )
+
+# Generate a caption for the given image
+# reference: https://chatgpt.com/share/678fc3f3-b94c-800b-b114-407634477991
+# ---------------------------------------------------------------------------------
+@st.cache_data(show_spinner=False)
+def generate_caption(image):
+    resized_image = image.resize((256, 256))  # Resize for efficiency
+    # Make captions from the picture drawn
+    # reference: https://huggingface.co/tasks/image-to-text
+    # ---------------------------------------------------------------------------------
+    captioner = pipeline("image-to-text", model="Salesforce/blip-image-captioning-base")
+    # ---------------------------------------------------------------------------------
+    return captioner(resized_image)[0]['generated_text']
+
 # Do something interesting with the image data and paths
 if canvas_result.image_data is not None:
     # Convert the numpy array to an image
@@ -79,14 +93,8 @@ if canvas_result.image_data is not None:
     # ---------------------------------------------------------------------------------
     image = Image.fromarray((canvas_result.image_data).astype(np.uint8))
     # ---------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------
-
-# Make captions from the picture drawn
-# reference: https://huggingface.co/tasks/image-to-text
-# ---------------------------------------------------------------------------------
-captioner = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large")
-#st.write(captioner(image))
-query = captioner(image)
+    text = generate_caption(image)  # Cached function call
+    query = text
 # ---------------------------------------------------------------------------------
 
 # Search for Results
