@@ -1,3 +1,4 @@
 chromadb
 requests
 pysqlite3-binary
+st_canvas
