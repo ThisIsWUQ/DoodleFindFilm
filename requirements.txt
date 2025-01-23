@@ -5,3 +5,4 @@ chromadb
 PIL
 streamlit-drawable-canvas
 transformers
+torch
