@@ -2,4 +2,3 @@ chromadb
 requests
 pysqlite3-binary
 streamlit-drawable-canvas
-st_canvas
