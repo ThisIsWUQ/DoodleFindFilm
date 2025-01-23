@@ -1,6 +1,6 @@
+# Connect API
 # reference: https://github.com/TharinduMadhusanka/semantic-movie-search/blob/main/TMDB.py
 # ---------------------------------------------------------------------------------
-# Connect API
 import requests
 import streamlit as st
 
