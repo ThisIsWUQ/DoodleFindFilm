@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import  requests
+import requests
 import chromadb
 from chromadb.utils import embedding_functions
 from TMDB import api_response
