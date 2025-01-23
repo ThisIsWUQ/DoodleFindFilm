@@ -1,7 +1,8 @@
 import streamlit as st
 import numpy as np
 import  requests
-import chromadb
+#import chromadb
+from streamlit_chromadb_connection.chromadb_connection import ChromadbConnection
 from chromadb.utils import embedding_functions
 from TMDB import api_response
 from YTS_url import get_movie_page_url
