@@ -3,4 +3,5 @@ pysqlite3-binary
 chromadb
 streamlit-drawable-canvas
 transformers
+sentence-transformers
 torch
