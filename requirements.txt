@@ -1,3 +1,7 @@
-chromadb
+numpy
 requests
 pysqlite3-binary
+chromadb
+PIL
+streamlit-drawable-canvas
+transformers
