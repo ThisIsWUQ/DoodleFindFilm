@@ -1,6 +1,6 @@
+# Get a Result through API
 # reference: https://github.com/TharinduMadhusanka/semantic-movie-search/blob/main/YTS_url.py
 # ---------------------------------------------------------------------------------
-# Get a Result through API
 import requests
 
 def get_movie_page_url(movie_name):
