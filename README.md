@@ -17,9 +17,9 @@ Hugging Face
 
 ChatGPT
 	Create a function for generating a caption
-https://chatgpt.com/share/678fc3f3-b94c-800b-b114-407634477991
-Convert the numpy array to an image
-	https://chatgpt.com/share/678f9b36-c14c-800b-a3e3-e7a768d4c32f 
+		https://chatgpt.com/share/678fc3f3-b94c-800b-b114-407634477991
+	Convert the numpy array to an image
+		https://chatgpt.com/share/678f9b36-c14c-800b-a3e3-e7a768d4c32f 
 
 The Movie DataBase (TMDB) https://developer.themoviedb.org/docs/getting-started
 	Thanks for the free API
