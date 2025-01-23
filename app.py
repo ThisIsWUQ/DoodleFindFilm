@@ -20,7 +20,7 @@ from transformers import pipeline
 # Configuration for ChromaDB connection in Streamlit
 configuration = {
     "client": "PersistentClient",
-    "path": "/tmp/.chroma"
+    "path": "tmdbtopmovie
 }
 
 # Collection name
