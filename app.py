@@ -16,7 +16,7 @@ from transformers import pipeline
 # Initialize ChromaDB client and collection
 # reference: https://github.com/TharinduMadhusanka/semantic-movie-search/blob/main/app.py
 # ---------------------------------------------------------------------------------
-chroma_client = chromadb.PersistentClient(path="tmdbtopmovies")
+chroma_client = chromadb.PersistentClient(path="../tmdbtopmovies")
 sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L12-v2")
 collection = chroma_client.get_or_create_collection(name="movies_collection", embedding_function=sentence_transformer_ef)
 # ---------------------------------------------------------------------------------
