@@ -12,7 +12,7 @@ def api_response(movie_id):
     data = response.json()
 
     if response.status_code != 200:
-        print("Error fetching data:", response.text)
+        st.write("Error fetching data:", response.text)
         return None
 
     image_url = f"https://image.tmdb.org/t/p/w500{data['poster_path']}"
