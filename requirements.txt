@@ -2,3 +2,4 @@ chromadb
 pysqlite3-binary
 streamlit_drawable_canvas
 transformers
+sentence_transformers
