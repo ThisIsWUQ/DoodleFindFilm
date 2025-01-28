@@ -112,10 +112,7 @@ if st.button("Search"):
         # ---------------------------------------------------------------------------------
         query = generate_caption(image)  # Cached function call
         st.write(query)
-    movies = collection.get()
-    st.write("Stored Movies:", movies)
     
-    st.write("Existing collections:", chroma_client.list_collections())
     results = search_movie(query, n_movies, min_year)
 
     for i, result in enumerate(results["metadatas"][0]):
