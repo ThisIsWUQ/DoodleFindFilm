@@ -1,7 +1,6 @@
-requests
 pysqlite3-binary
-chromadb
 streamlit-drawable-canvas
 transformers
 sentence-transformers
 torch
+chromadb==0.6.3
