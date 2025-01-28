@@ -1,4 +1,1 @@
-streamlit-drawable-canvas
-transformers
-sentence-transformers
-torch
+
