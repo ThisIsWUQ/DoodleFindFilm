@@ -99,11 +99,10 @@ def generate_caption(image):
 # ---------------------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def search_movie(query, n_movies, min_year):
-    
-if st.button("Search"):
     st.write(f"Number of documents in collection: {collection.count()}")
     return collection.query(query_texts=[query], n_results=n_movies, where={"release_year": {"$gte": min_year}})
 
+if st.button("Search"):
     # Caption the scribbles drawn
     if canvas_result.image_data is not None:
         # Convert the numpy array to an image
