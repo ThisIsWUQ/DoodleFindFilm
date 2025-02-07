@@ -1,6 +1,8 @@
 # DoodleFindFilm
 Formerly VisIt, this application is developed as part of my TBII project. The app aims to find films using visual inputs such as scribbles and photos.  
 
+try now: https://doodlefindfilm.streamlit.app/
+
 # References
 
 Without these helps, this project would not have been done:
