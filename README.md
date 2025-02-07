@@ -1,5 +1,5 @@
-# VisIt
-This repo contains code files for my TBII's project 
+# DoodleFindFilm
+Formerly VisIt, this application is developed as part of my TBII project. The app aims to find films using visual inputs such as scribbles and photos.  
 
 # References
 
