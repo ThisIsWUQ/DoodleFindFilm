@@ -146,5 +146,5 @@ if st.button("Search"):
     # Take a Survey
     st.header("Take a Survey", divider=True)
     st.write("How is your impression with the app? If you have 5 minutes, please take this survey below")
-    st.write("Also, do not close this app yet! You can close it after taking the survey")
+    st.write("Also, do not close this app yet! You can close it after taking the survey.")
     st.link_button("Click here to go to the survey", "https://forms.gle/Cbya8epun8ngyeX4A")
