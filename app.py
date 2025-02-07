@@ -27,13 +27,13 @@ collection = chroma_client.get_or_create_collection(name="movies_collection", em
 
 # Set up app's name
 st.set_page_config(
-    page_title="VisIt",
+    page_title="DoodleFindFilm",
     page_icon=":film_frames:"
 )
 
 # App title and brief description
-st.title("VisIt")
-st.write("Welcome to VisIt! Find a Film :film_frames: from your Scribbles :pencil2:")
+st.title("DoodleFindFilm")
+st.write("Welcome to DoodleFindFilm! Find a Film :film_frames: from your Scribbles :pencil2:")
 
 # Instruction
 st.header("Instruction", divider=True)
