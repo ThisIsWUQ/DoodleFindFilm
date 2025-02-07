@@ -1,6 +1,10 @@
+# Fix the issue: "unsupported version of sqlite3. Chroma requires sqlite3 >= 3.35.0."
+# reference: https://discuss.streamlit.io/t/issues-with-chroma-and-sqlite/47950/4
+# ---------------------------------------------------------------------------------
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# ---------------------------------------------------------------------------------
 
 import streamlit as st
 import numpy as np
@@ -99,7 +103,6 @@ def generate_caption(image):
 # ---------------------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def search_movie(query, n_movies, min_year):
-    #st.write(f"Number of documents in collection: {collection.count()}")
     return collection.query(query_texts=[query], n_results=n_movies, where={"release_year": {"$gte": min_year}})
 
 if st.button("Search"):
