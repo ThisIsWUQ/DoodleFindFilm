@@ -52,7 +52,7 @@ with col4:
 # ---------------------------------------------------------------------------------
 # Specify canvas parameters in application
 drawing_mode = st.sidebar.selectbox(
-    "Drawing tool:", ("point", "freedraw", "line", "rect", "circle", "transform")
+    "Drawing tool:", ("freedraw", "point", "line", "rect", "circle", "transform")
 )
 
 stroke_width = st.sidebar.slider("Stroke width: ", 1, 25, 3)
@@ -99,7 +99,7 @@ def generate_caption(image):
 # ---------------------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def search_movie(query, n_movies, min_year):
-    st.write(f"Number of documents in collection: {collection.count()}")
+    #st.write(f"Number of documents in collection: {collection.count()}")
     return collection.query(query_texts=[query], n_results=n_movies, where={"release_year": {"$gte": min_year}})
 
 if st.button("Search"):
