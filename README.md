@@ -3,6 +3,9 @@ Formerly VisIt, this Streamlit application is developed as part of my TBII proje
 
 Try now: https://doodlefindfilm.streamlit.app/
 
+Do you have feedback or suggestions? Take a survey here: https://docs.google.com/forms/d/e/1FAIpQLSeDSSBR9coPgCHbVguYHyq68WOWcp4tF-IjKRFsWaYGCeFYAg/viewform?usp=dialog
+
+
 # References
 
 Without these helps, this project would not have been done:
